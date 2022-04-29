@@ -1,11 +1,27 @@
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
+import { Button, TextField } from "./components";
 
 function App() {
+  const [value, setValue] = useState("");
+
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
+
   return (
     <div className="app">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus
-      vitae rem aspernatur ipsum, in labore perspiciatis incidunt culpa, quasi
-      officia hic illo, atque reprehenderit sed nihil quo? Placeat, aspernatur!
+      <div className="container">
+        <Button>Learn more</Button>
+        <Button appearance="darkBlue" block>
+          Learn more
+        </Button>
+        <Button appearance="green" block>
+          Learn more
+        </Button>
+      </div>
+      <div className="container">
+        <TextField title="Email" value={value} onChange={onChange} />
+      </div>
     </div>
   );
 }
