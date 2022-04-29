@@ -1,0 +1,75 @@
+
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../assets/fonts/#{$file_name}.woff") format("woff"),
+      url("../assets/fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "fonts.scss";
+@import "normalize.scss";
+
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #03030E;
+}
+
+#root {
+  height: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1400px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+}
