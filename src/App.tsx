@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
-import { Button, TextField } from "./components";
+import { Button, Card, TextField } from "./components";
 
 function App() {
   const [value, setValue] = useState("");
@@ -11,16 +11,11 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <Button>Learn more</Button>
-        <Button appearance="darkBlue" block>
-          Learn more
-        </Button>
-        <Button appearance="green" block>
-          Learn more
-        </Button>
-      </div>
-      <div className="container">
-        <TextField title="Email" value={value} onChange={onChange} />
+        <Card
+          count={5555444}
+          title="Make video about F55"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        />
       </div>
     </div>
   );

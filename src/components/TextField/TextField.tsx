@@ -17,18 +17,16 @@ const Input: FC<TextFieldProps> = ({
 }) => {
   return (
     <div className={cn(styles.input_box, className)}>
-      <label>
-        <span>{title}</span>
-        <input
-          {...props}
-          placeholder={placeholder}
-          type={type}
-          maxLength={maxlength}
-          ref={ref}
-          value={value}
-          onChange={onChange}
-        />
-      </label>
+      <span>{title}</span>
+      <input
+        {...props}
+        placeholder={placeholder}
+        type={type}
+        maxLength={maxlength}
+        ref={ref}
+        value={value}
+        onChange={onChange}
+      />
     </div>
   );
 };
