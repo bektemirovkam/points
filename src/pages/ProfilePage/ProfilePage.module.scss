@@ -1,0 +1,45 @@
+.page {
+  position: relative;
+}
+.title {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+  color: #fff;
+  @media (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 450px) {
+    font-size: 28px;
+  }
+}
+
+.tabs {
+  border-bottom: 1px solid #2a2750;
+}
+.tabsBtn {
+  font-size: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 20px 30px;
+  transition: all 0.15s linear;
+  &:hover {
+    opacity: 1;
+  }
+  &.active {
+    border-bottom: 1px solid #ff2363;
+  }
+  @media (max-width: 767px) {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+.form {
+  transition: opacity 0.35s linear;
+}
+
+// entering: { opacity: 0 },
+//   entered: { opacity: 1 },
+//   exiting: { opacity: 0 },
+//   exited: { opacity: 0 },

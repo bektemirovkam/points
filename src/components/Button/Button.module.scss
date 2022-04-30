@@ -10,6 +10,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: inherit;
+  font-family: inherit;
   &:hover {
     opacity: 0.8;
   }
@@ -24,6 +25,9 @@
   }
   &.green {
     background-color: #00e77f;
+  }
+  &.transparent {
+    background-color: transparent;
   }
   &.block {
     display: flex;

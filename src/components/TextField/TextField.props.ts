@@ -11,8 +11,8 @@ export interface TextFieldProps
     HTMLInputElement
   > {
   title: string;
-  value: string | number;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   type?: HTMLInputTypeAttribute;
   maxlength?: number;
   placeholder?: string;

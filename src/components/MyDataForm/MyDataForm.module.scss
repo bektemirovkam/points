@@ -1,0 +1,43 @@
+.wrapper {
+  margin-top: 60px;
+}
+.email {
+  @media (min-width: 735px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.emailField {
+  @media (min-width: 735px) {
+    margin-right: 20px;
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
+.emailBtn {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  @media (min-width: 735px) {
+    flex: 0 0 245px;
+    margin-bottom: 0;
+  }
+}
+.input {
+  margin-bottom: 30px;
+}
+.lastField {
+  margin-bottom: 40px;
+}
+
+.modalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalForm {
+}
+.modalTextField {
+  margin-bottom: 40px;
+}

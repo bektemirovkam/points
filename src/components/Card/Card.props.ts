@@ -5,6 +5,6 @@ export interface CardProps
   count: number | string;
   title: string;
   description: string;
-  btnColor?: "pink" | "darkBlue" | "green" | "blue";
+  btnColor?: "pink" | "darkBlue" | "green" | "blue" | "transparent";
   btnText?: string;
 }

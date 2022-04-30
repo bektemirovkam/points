@@ -61,12 +61,6 @@ button {
   @media (min-width: 576px) {
     max-width: 100%;
   }
-  // @media (min-width: 768px) {
-  //   max-width: 720px;
-  // }
-  // @media (min-width: 992px) {
-  //   max-width: 960px;
-  // }
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
@@ -75,5 +69,15 @@ button {
   }
 }
 
-.navbar {
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 0;
+}
+.fade-exit-active {
+  opacity: 0;
 }
