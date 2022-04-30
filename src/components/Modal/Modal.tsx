@@ -44,10 +44,18 @@ const Modal: FC<ModalProps> = ({
     };
   }, [isOpen]);
 
+  const handleClickBackDrop = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLDivElement;
+
+    if (!target.closest(".modal")) {
+      closeModal();
+    }
+  };
+
   return (
     <CSSTransition in={isOpen} timeout={250} classNames="alert" unmountOnExit>
-      <div className={cn(styles.backdrop, "modal")} onClick={closeModal}>
-        <div className={cn(styles.content, className)} {...props}>
+      <div className={styles.backdrop} onClick={handleClickBackDrop}>
+        <div className={cn(styles.content, className, "modal")} {...props}>
           {children}
         </div>
       </div>

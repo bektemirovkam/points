@@ -16,9 +16,13 @@ const icons = {
   discord: <DiscordIcon />,
 };
 
-const ActivityList: FC<ActivityListProps> = ({ activities, className }) => {
+const ActivityList: FC<ActivityListProps> = ({
+  activities,
+  className,
+  ...props
+}) => {
   return (
-    <div className={cn(styles.wrapper, className)}>
+    <div className={cn(styles.wrapper, className)} {...props}>
       <span className={styles.title}>You activity:</span>
       <ul className={styles.list}>
         {activities.map((activity) => (
