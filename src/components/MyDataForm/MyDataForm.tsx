@@ -37,10 +37,14 @@ const MyDataForm: FC<MyDataFormProps> = ({ className, ...props }) => {
           Save
         </Button>
       </div>
-      <Modal isOpen={showModal} closeModal={closeModal}>
+      <Modal
+        isOpen={showModal}
+        closeModal={closeModal}
+        className={styles.modalContent}
+      >
         <div className={styles.modalTop}>
           <span>Change e-mail</span>
-          <Button appearance="transparent">
+          <Button appearance="transparent" className={styles.closeBtn}>
             <CloseIcon />
           </Button>
         </div>

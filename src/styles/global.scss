@@ -27,6 +27,12 @@ body {
   background-color: #03030e;
 }
 
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
 #root {
   height: 100%;
 }
@@ -80,4 +86,22 @@ button {
 }
 .fade-exit-active {
   opacity: 0;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 150ms linear, transform 150ms linear;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 150ms linear, transform 150ms linear;
 }

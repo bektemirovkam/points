@@ -9,3 +9,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.content {
+  background-color: #03030e;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2a2750;
+  margin: 0px 10px;
+  @media (min-width: 800px) {
+    padding: 40px;
+  }
+}
