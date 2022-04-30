@@ -1,5 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
+
 import { Navbar } from "./components";
+import ActivityPage from "./pages/ActivityPage/ActivityPage";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 function App() {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
@@ -47,6 +51,12 @@ function App() {
           toggleNavbar={toggleNavbar}
           closeNavbar={closeNavbar}
         />
+
+        <Routes>
+          <Route path="/" element={<ActivityPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </div>
     </div>
   );

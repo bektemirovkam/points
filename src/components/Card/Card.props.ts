@@ -2,8 +2,9 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface CardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  count: number;
+  count: number | string;
   title: string;
   description: string;
-  btnColor?: "pink" | "darkBlue" | "green";
+  btnColor?: "pink" | "darkBlue" | "green" | "blue";
+  btnText?: string;
 }

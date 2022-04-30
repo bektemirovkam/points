@@ -13,6 +13,7 @@ const Card: FC<CardProps> = ({
   count,
   description,
   btnColor = "pink",
+  btnText = "Learn more",
   ...props
 }) => {
   return (
@@ -26,7 +27,7 @@ const Card: FC<CardProps> = ({
       </div>
       <p className={styles.description}>{description}</p>
       {children}
-      <Button appearance={btnColor}>learn more</Button>
+      <Button appearance={btnColor}>{btnText}</Button>
     </div>
   );
 };

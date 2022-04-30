@@ -1,0 +1,26 @@
+.wrapper {
+  margin: 40px 0;
+}
+.title {
+  display: block;
+  margin-bottom: 40px;
+}
+.list {
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.text {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  padding-right: 10px;
+  span {
+    margin-left: 10px;
+  }
+}
