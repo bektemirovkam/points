@@ -6,6 +6,6 @@ export interface ButtonProps
     HTMLButtonElement
   > {
   children: ReactNode;
-  appearance?: "pink" | "darkBlue" | "green";
+  appearance?: "pink" | "darkBlue" | "green" | "blue";
   block?: boolean;
 }

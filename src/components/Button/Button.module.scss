@@ -1,28 +1,32 @@
 .btn {
-    color: #fff;
-    border-radius: 10px;
-    padding: 12px 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 21px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    &:hover {
-        opacity: 0.8;
-    }
-    &.pink {
-        background-color: #FF2363;
-    }
-    &.darkBlue {
-        background-color: #2A2750;
-    }
-    &.green {
-        background-color: #00E77F;
-    }
-    &.block {
-        display: flex;
-        width: 100%;
-    }
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: inherit;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.pink {
+    background-color: #ff2363;
+  }
+  &.blue {
+    background-color: #2a2750;
+  }
+  &.darkBlue {
+    background-color: #111132;
+  }
+  &.green {
+    background-color: #00e77f;
+  }
+  &.block {
+    display: flex;
+    width: 100%;
+  }
 }

@@ -17,6 +17,7 @@ const Button: FC<ButtonProps> = ({
         [styles.pink]: appearance === "pink",
         [styles.darkBlue]: appearance === "darkBlue",
         [styles.green]: appearance === "green",
+        [styles.blue]: appearance === "blue",
         [styles.block]: block,
       })}
       {...props}
