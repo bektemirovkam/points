@@ -2,7 +2,10 @@
   background-color: #111132;
   border: 1px solid #2a2750;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px;
+  @media (min-width: 992px) {
+    padding: 40px;
+  }
 }
 
 .header {
@@ -15,6 +18,7 @@
 .title {
   line-height: 1.5;
   flex: 1 1 auto;
+  padding-right: 5px;
   @media (max-width: 1440px) {
     font-size: 20px;
   }

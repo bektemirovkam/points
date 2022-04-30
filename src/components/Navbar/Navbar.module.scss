@@ -1,7 +1,10 @@
 .wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  @media (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
 }
 .navbar {
   width: 256px;
@@ -30,6 +33,7 @@
   }
   span {
     margin: 0 20px;
+    font-weight: 600;
   }
 }
 .menu {
